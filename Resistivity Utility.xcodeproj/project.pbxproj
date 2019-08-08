@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A02ECFB22F8D1C1006DE1DB /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02ECFA22F8D1C1006DE1DB /* HealthViewController.swift */; };
+		5A02ECFD22F8D1D8006DE1DB /* ChangeCalibrationStandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02ECFC22F8D1D8006DE1DB /* ChangeCalibrationStandardViewController.swift */; };
+		5A02ECFF22F8D1E6006DE1DB /* ChangeCalibrationStandardConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02ECFE22F8D1E6006DE1DB /* ChangeCalibrationStandardConfirmationViewController.swift */; };
+		5A02ED0122F8DB06006DE1DB /* HealthViewController Model Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02ED0022F8DB06006DE1DB /* HealthViewController Model Updates.swift */; };
+		5A02ED0322F8E3A2006DE1DB /* HealthMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02ED0222F8E3A2006DE1DB /* HealthMeasurement.swift */; };
+		5A0BA19522D5608500990D27 /* DiscardDataWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0BA19422D5608500990D27 /* DiscardDataWarningViewController.swift */; };
+		5A0BA19822D5673800990D27 /* DiscardDataWarningMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0BA19722D5673800990D27 /* DiscardDataWarningMeasureViewController.swift */; };
+		5A25427722E660780037188C /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25427622E660780037188C /* GeneralPreferencesViewController.swift */; };
+		5A26911E22E2CEB900ACECFC /* RawDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26911D22E2CEB900ACECFC /* RawDataViewController.swift */; };
+		5A26912022E2CF1A00ACECFC /* RawDataViewController+NSTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26911F22E2CF1A00ACECFC /* RawDataViewController+NSTableViewDelegate.swift */; };
+		5A26912222E2D28B00ACECFC /* RawDataViewController FirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26912122E2D28B00ACECFC /* RawDataViewController FirstResponder.swift */; };
+		5A26912422E2D2E600ACECFC /* RawDataViewController Model Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26912322E2D2E600ACECFC /* RawDataViewController Model Updates.swift */; };
+		5A26912722E2D63B00ACECFC /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26912622E2D63B00ACECFC /* MeasurementViewController.swift */; };
+		5A26912922E2D6F800ACECFC /* MeasurementViewController+NSControlTextEditingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26912822E2D6F800ACECFC /* MeasurementViewController+NSControlTextEditingDelegate.swift */; };
+		5A26912B22E2D74F00ACECFC /* MeasurementViewController Model Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26912A22E2D74F00ACECFC /* MeasurementViewController Model Updates.swift */; };
+		5A26912E22E2E96B00ACECFC /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A26912D22E2E96B00ACECFC /* Preferences.swift */; };
+		5A2C537522CAAF50009E2CDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C537422CAAF50009E2CDE /* AppDelegate.swift */; };
+		5A2C537722CAAF50009E2CDE /* PrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C537622CAAF50009E2CDE /* PrimaryViewController.swift */; };
+		5A2C537922CAAF52009E2CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C537822CAAF52009E2CDE /* Assets.xcassets */; };
+		5A2C537C22CAAF52009E2CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2C537A22CAAF52009E2CDE /* Main.storyboard */; };
+		5A2C53A622CAB041009E2CDE /* SwiftVISA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C53A522CAB041009E2CDE /* SwiftVISA.framework */; };
+		5A2C53A722CAB041009E2CDE /* SwiftVISA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C53A522CAB041009E2CDE /* SwiftVISA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A2DA8EE22D3EE78006AE654 /* ResistivityConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8ED22D3EE78006AE654 /* ResistivityConfigurationViewController.swift */; };
+		5A2DA8F022D40C40006AE654 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8EF22D40C40006AE654 /* Format.swift */; };
+		5A2DA8F222D40C55006AE654 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8F122D40C55006AE654 /* Configuration.swift */; };
+		5A2DA8F422D40D5A006AE654 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8F322D40D5A006AE654 /* Status.swift */; };
+		5A2DA8F622D40D8D006AE654 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8F522D40D8D006AE654 /* Data.swift */; };
+		5A2DA8F822D40F4C006AE654 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8F722D40F4C006AE654 /* MainMenu.swift */; };
+		5A2DA8FA22D4117E006AE654 /* PrimaryViewController FirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8F922D4117E006AE654 /* PrimaryViewController FirstResponder.swift */; };
+		5A2DA8FC22D411E6006AE654 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DA8FB22D411E6006AE654 /* Units.swift */; };
+		5A44CD4222D68CC200797C74 /* Exporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44CD4122D68CC200797C74 /* Exporting.swift */; };
+		5A44CD4422D68F6E00797C74 /* ResistivityCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44CD4322D68F6E00797C74 /* ResistivityCalculator.swift */; };
+		5A483F7C22CDF68D007EEED2 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A483F7B22CDF68D007EEED2 /* Debug.swift */; };
+		5A483F7E22CDF6BD007EEED2 /* OhmMeterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A483F7D22CDF6BD007EEED2 /* OhmMeterController.swift */; };
+		5A483F8022CDF6D5007EEED2 /* SimulatedOhmMeterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A483F7F22CDF6D5007EEED2 /* SimulatedOhmMeterController.swift */; };
+		5A483F8222CE0A07007EEED2 /* PrimaryWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A483F8122CE0A07007EEED2 /* PrimaryWindowController.swift */; };
+		5A483F8422CE0B7B007EEED2 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A483F8322CE0B7B007EEED2 /* Notifications.swift */; };
+		5A483F8922CE108A007EEED2 /* PrimaryViewController Model Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A483F8822CE108A007EEED2 /* PrimaryViewController Model Updates.swift */; };
+		5A4C813022CD72BE00ED7445 /* Instrument Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C812F22CD72BE00ED7445 /* Instrument Tests.swift */; };
+		5A4C813122CD732C00ED7445 /* SwiftVISA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C53A522CAB041009E2CDE /* SwiftVISA.framework */; };
+		5A4C813322CD768000ED7445 /* DefaultOhmMeterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C813222CD768000ED7445 /* DefaultOhmMeterController.swift */; };
+		5A57B96F22EEAE3F00A8450A /* BoxAndWhiskersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57B96E22EEAE3F00A8450A /* BoxAndWhiskersViewController.swift */; };
+		5A7D493022FA0C5800CA7013 /* HealthWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D492F22FA0C5800CA7013 /* HealthWindowController.swift */; };
+		5A8873B122FB7FFD00813D57 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8873B022FB7FFD00813D57 /* StatisticsViewController.swift */; };
+		5A8873B322FB80CB00813D57 /* StatisticsViewController+NSTableViewDelegate+NSTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8873B222FB80CB00813D57 /* StatisticsViewController+NSTableViewDelegate+NSTableViewDataSource.swift */; };
+		5A8873B622FB821200813D57 /* StatisticsViewController Model Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8873B522FB821200813D57 /* StatisticsViewController Model Updates.swift */; };
+		5ACB947622CCAC8800FAA015 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB947522CCAC8800FAA015 /* Model.swift */; };
+		5ACDBFAA22CD6A430098ACA4 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDBFA922CD6A430098ACA4 /* Style.swift */; };
+		5ACDBFAE22CD6F4E0098ACA4 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDBFAD22CD6F4E0098ACA4 /* Measurement.swift */; };
+		5ADFF6A322E900D100694220 /* BoxAndWhiskersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADFF6A222E900D100694220 /* BoxAndWhiskersView.swift */; };
+		5AEA3A0522F7BEFE00B769C2 /* ScatterPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA3A0422F7BEFE00B769C2 /* ScatterPlotView.swift */; };
+		5AEA3A0722F7C53E00B769C2 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA3A0622F7C53E00B769C2 /* HealthData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A4C812A22CD729300ED7445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A2C536922CAAF50009E2CDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A2C537022CAAF50009E2CDE;
+			remoteInfo = "Resistivity Utility";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A2C53A322CAAF9F009E2CDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A2C53A722CAB041009E2CDE /* SwiftVISA.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A02ECFA22F8D1C1006DE1DB /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		5A02ECFC22F8D1D8006DE1DB /* ChangeCalibrationStandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCalibrationStandardViewController.swift; sourceTree = "<group>"; };
+		5A02ECFE22F8D1E6006DE1DB /* ChangeCalibrationStandardConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCalibrationStandardConfirmationViewController.swift; sourceTree = "<group>"; };
+		5A02ED0022F8DB06006DE1DB /* HealthViewController Model Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthViewController Model Updates.swift"; sourceTree = "<group>"; };
+		5A02ED0222F8E3A2006DE1DB /* HealthMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMeasurement.swift; sourceTree = "<group>"; };
+		5A0BA19422D5608500990D27 /* DiscardDataWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardDataWarningViewController.swift; sourceTree = "<group>"; };
+		5A0BA19722D5673800990D27 /* DiscardDataWarningMeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardDataWarningMeasureViewController.swift; sourceTree = "<group>"; };
+		5A25427622E660780037188C /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		5A26911D22E2CEB900ACECFC /* RawDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
+		5A26911F22E2CF1A00ACECFC /* RawDataViewController+NSTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawDataViewController+NSTableViewDelegate.swift"; sourceTree = "<group>"; };
+		5A26912122E2D28B00ACECFC /* RawDataViewController FirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawDataViewController FirstResponder.swift"; sourceTree = "<group>"; };
+		5A26912322E2D2E600ACECFC /* RawDataViewController Model Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawDataViewController Model Updates.swift"; sourceTree = "<group>"; };
+		5A26912622E2D63B00ACECFC /* MeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
+		5A26912822E2D6F800ACECFC /* MeasurementViewController+NSControlTextEditingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementViewController+NSControlTextEditingDelegate.swift"; sourceTree = "<group>"; };
+		5A26912A22E2D74F00ACECFC /* MeasurementViewController Model Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementViewController Model Updates.swift"; sourceTree = "<group>"; };
+		5A26912D22E2E96B00ACECFC /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		5A2C537122CAAF50009E2CDE /* Resistivity Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resistivity Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2C537422CAAF50009E2CDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A2C537622CAAF50009E2CDE /* PrimaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryViewController.swift; sourceTree = "<group>"; };
+		5A2C537822CAAF52009E2CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A2C537B22CAAF52009E2CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A2C537D22CAAF52009E2CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2C537E22CAAF52009E2CDE /* Resistivity_Utility.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Resistivity_Utility.entitlements; sourceTree = "<group>"; };
+		5A2C53A522CAB041009E2CDE /* SwiftVISA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftVISA.framework; sourceTree = "<group>"; };
+		5A2DA8ED22D3EE78006AE654 /* ResistivityConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistivityConfigurationViewController.swift; sourceTree = "<group>"; };
+		5A2DA8EF22D40C40006AE654 /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		5A2DA8F122D40C55006AE654 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		5A2DA8F322D40D5A006AE654 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		5A2DA8F522D40D8D006AE654 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5A2DA8F722D40F4C006AE654 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		5A2DA8F922D4117E006AE654 /* PrimaryViewController FirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimaryViewController FirstResponder.swift"; sourceTree = "<group>"; };
+		5A2DA8FB22D411E6006AE654 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		5A44CD4122D68CC200797C74 /* Exporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporting.swift; sourceTree = "<group>"; };
+		5A44CD4322D68F6E00797C74 /* ResistivityCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistivityCalculator.swift; sourceTree = "<group>"; };
+		5A483F7B22CDF68D007EEED2 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		5A483F7D22CDF6BD007EEED2 /* OhmMeterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhmMeterController.swift; sourceTree = "<group>"; };
+		5A483F7F22CDF6D5007EEED2 /* SimulatedOhmMeterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedOhmMeterController.swift; sourceTree = "<group>"; };
+		5A483F8122CE0A07007EEED2 /* PrimaryWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryWindowController.swift; sourceTree = "<group>"; };
+		5A483F8322CE0B7B007EEED2 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		5A483F8822CE108A007EEED2 /* PrimaryViewController Model Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimaryViewController Model Updates.swift"; sourceTree = "<group>"; };
+		5A4C812522CD729300ED7445 /* Resistivity UtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Resistivity UtilityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4C812922CD729300ED7445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4C812F22CD72BE00ED7445 /* Instrument Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instrument Tests.swift"; sourceTree = "<group>"; };
+		5A4C813222CD768000ED7445 /* DefaultOhmMeterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOhmMeterController.swift; sourceTree = "<group>"; };
+		5A57B96E22EEAE3F00A8450A /* BoxAndWhiskersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxAndWhiskersViewController.swift; sourceTree = "<group>"; };
+		5A7D492F22FA0C5800CA7013 /* HealthWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWindowController.swift; sourceTree = "<group>"; };
+		5A8873B022FB7FFD00813D57 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		5A8873B222FB80CB00813D57 /* StatisticsViewController+NSTableViewDelegate+NSTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticsViewController+NSTableViewDelegate+NSTableViewDataSource.swift"; sourceTree = "<group>"; };
+		5A8873B522FB821200813D57 /* StatisticsViewController Model Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticsViewController Model Updates.swift"; sourceTree = "<group>"; };
+		5ACB947522CCAC8800FAA015 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5ACDBFA922CD6A430098ACA4 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		5ACDBFAD22CD6F4E0098ACA4 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		5ADFF6A222E900D100694220 /* BoxAndWhiskersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxAndWhiskersView.swift; sourceTree = "<group>"; };
+		5AEA3A0422F7BEFE00B769C2 /* ScatterPlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterPlotView.swift; sourceTree = "<group>"; };
+		5AEA3A0622F7C53E00B769C2 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A2C536E22CAAF50009E2CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2C53A622CAB041009E2CDE /* SwiftVISA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4C812222CD729300ED7445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4C813122CD732C00ED7445 /* SwiftVISA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A02ECF722F8D17D006DE1DB /* HealthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A02ECFA22F8D1C1006DE1DB /* HealthViewController.swift */,
+				5A02ED0022F8DB06006DE1DB /* HealthViewController Model Updates.swift */,
+			);
+			path = HealthViewController;
+			sourceTree = "<group>";
+		};
+		5A02ECF822F8D194006DE1DB /* ChangeCalibrationStandardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A02ECFC22F8D1D8006DE1DB /* ChangeCalibrationStandardViewController.swift */,
+			);
+			path = ChangeCalibrationStandardViewController;
+			sourceTree = "<group>";
+		};
+		5A02ECF922F8D1A7006DE1DB /* ChangeCalibrationStandardConfirmationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A02ECFE22F8D1E6006DE1DB /* ChangeCalibrationStandardConfirmationViewController.swift */,
+			);
+			path = ChangeCalibrationStandardConfirmationViewController;
+			sourceTree = "<group>";
+		};
+		5A0BA19622D5608B00990D27 /* DiscardDataWarningViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A0BA19722D5673800990D27 /* DiscardDataWarningMeasureViewController.swift */,
+				5A0BA19422D5608500990D27 /* DiscardDataWarningViewController.swift */,
+			);
+			path = DiscardDataWarningViewController;
+			sourceTree = "<group>";
+		};
+		5A25427422E660630037188C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				5A25427522E6606B0037188C /* General */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		5A25427522E6606B0037188C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5A25427622E660780037188C /* GeneralPreferencesViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5A26911B22E2CE8700ACECFC /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				5A57B96D22EEAE2000A8450A /* BoxAndWhiskersViewController */,
+				5A26911C22E2CE9100ACECFC /* RawDataViewController */,
+				5A8873AE22FB7FE300813D57 /* StatisticsViewController */,
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		5A26911C22E2CE9100ACECFC /* RawDataViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A26911D22E2CEB900ACECFC /* RawDataViewController.swift */,
+				5A26911F22E2CF1A00ACECFC /* RawDataViewController+NSTableViewDelegate.swift */,
+				5A26912122E2D28B00ACECFC /* RawDataViewController FirstResponder.swift */,
+				5A26912322E2D2E600ACECFC /* RawDataViewController Model Updates.swift */,
+			);
+			path = RawDataViewController;
+			sourceTree = "<group>";
+		};
+		5A26912C22E2D97600ACECFC /* PrimaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C537622CAAF50009E2CDE /* PrimaryViewController.swift */,
+				5A483F8822CE108A007EEED2 /* PrimaryViewController Model Updates.swift */,
+				5A2DA8F922D4117E006AE654 /* PrimaryViewController FirstResponder.swift */,
+			);
+			path = PrimaryViewController;
+			sourceTree = "<group>";
+		};
+		5A2C536822CAAF50009E2CDE = {
+			isa = PBXGroup;
+			children = (
+				5A2C53A522CAB041009E2CDE /* SwiftVISA.framework */,
+				5A2C537322CAAF50009E2CDE /* Resistivity Utility */,
+				5A4C812622CD729300ED7445 /* Resistivity UtilityTests */,
+				5A2C537222CAAF50009E2CDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A2C537222CAAF50009E2CDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C537122CAAF50009E2CDE /* Resistivity Utility.app */,
+				5A4C812522CD729300ED7445 /* Resistivity UtilityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A2C537322CAAF50009E2CDE /* Resistivity Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5A2C537422CAAF50009E2CDE /* AppDelegate.swift */,
+				5A2DA8F722D40F4C006AE654 /* MainMenu.swift */,
+				5A483F7B22CDF68D007EEED2 /* Debug.swift */,
+				5A483F8322CE0B7B007EEED2 /* Notifications.swift */,
+				5ACDBFA922CD6A430098ACA4 /* Style.swift */,
+				5ADFF6A422E900D500694220 /* Views */,
+				5ACDBFAF22CD6FB20098ACA4 /* Controllers */,
+				5ACDBFB022CD6FB70098ACA4 /* Models */,
+				5A2C537822CAAF52009E2CDE /* Assets.xcassets */,
+				5A2C537A22CAAF52009E2CDE /* Main.storyboard */,
+				5A2C537D22CAAF52009E2CDE /* Info.plist */,
+				5A2C537E22CAAF52009E2CDE /* Resistivity_Utility.entitlements */,
+			);
+			path = "Resistivity Utility";
+			sourceTree = "<group>";
+		};
+		5A2DA8EB22D3ED16006AE654 /* MeasurementViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A26912622E2D63B00ACECFC /* MeasurementViewController.swift */,
+				5A26912822E2D6F800ACECFC /* MeasurementViewController+NSControlTextEditingDelegate.swift */,
+				5A26912A22E2D74F00ACECFC /* MeasurementViewController Model Updates.swift */,
+			);
+			path = MeasurementViewController;
+			sourceTree = "<group>";
+		};
+		5A2DA8EC22D3EE65006AE654 /* ResistivityConfigurationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A2DA8ED22D3EE78006AE654 /* ResistivityConfigurationViewController.swift */,
+			);
+			path = ResistivityConfigurationViewController;
+			sourceTree = "<group>";
+		};
+		5A483F8522CE0DAA007EEED2 /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A483F8122CE0A07007EEED2 /* PrimaryWindowController.swift */,
+				5A7D492F22FA0C5800CA7013 /* HealthWindowController.swift */,
+			);
+			path = "Window Controllers";
+			sourceTree = "<group>";
+		};
+		5A483F8622CE0DB7007EEED2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A02ECF922F8D1A7006DE1DB /* ChangeCalibrationStandardConfirmationViewController */,
+				5A02ECF822F8D194006DE1DB /* ChangeCalibrationStandardViewController */,
+				5A02ECF722F8D17D006DE1DB /* HealthViewController */,
+				5A25427422E660630037188C /* Preferences */,
+				5A26912C22E2D97600ACECFC /* PrimaryViewController */,
+				5A2DA8EB22D3ED16006AE654 /* MeasurementViewController */,
+				5A26911B22E2CE8700ACECFC /* Inspector */,
+				5A0BA19622D5608B00990D27 /* DiscardDataWarningViewController */,
+				5A2DA8EC22D3EE65006AE654 /* ResistivityConfigurationViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5A483F8722CE0DC8007EEED2 /* Instrument Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A483F7D22CDF6BD007EEED2 /* OhmMeterController.swift */,
+				5A4C813222CD768000ED7445 /* DefaultOhmMeterController.swift */,
+				5A483F7F22CDF6D5007EEED2 /* SimulatedOhmMeterController.swift */,
+			);
+			path = "Instrument Controllers";
+			sourceTree = "<group>";
+		};
+		5A4C812622CD729300ED7445 /* Resistivity UtilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A4C812F22CD72BE00ED7445 /* Instrument Tests.swift */,
+				5A4C812922CD729300ED7445 /* Info.plist */,
+			);
+			path = "Resistivity UtilityTests";
+			sourceTree = "<group>";
+		};
+		5A57B96D22EEAE2000A8450A /* BoxAndWhiskersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A57B96E22EEAE3F00A8450A /* BoxAndWhiskersViewController.swift */,
+			);
+			path = BoxAndWhiskersViewController;
+			sourceTree = "<group>";
+		};
+		5A5CCD5C22D6A80400CAAC4B /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				5ACDBFAD22CD6F4E0098ACA4 /* Measurement.swift */,
+				5A02ED0222F8E3A2006DE1DB /* HealthMeasurement.swift */,
+				5A44CD4122D68CC200797C74 /* Exporting.swift */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
+		5A8873AE22FB7FE300813D57 /* StatisticsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A8873B022FB7FFD00813D57 /* StatisticsViewController.swift */,
+				5A8873B222FB80CB00813D57 /* StatisticsViewController+NSTableViewDelegate+NSTableViewDataSource.swift */,
+				5A8873B522FB821200813D57 /* StatisticsViewController Model Updates.swift */,
+			);
+			path = StatisticsViewController;
+			sourceTree = "<group>";
+		};
+		5ACDBFAF22CD6FB20098ACA4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A483F8522CE0DAA007EEED2 /* Window Controllers */,
+				5A483F8622CE0DB7007EEED2 /* View Controllers */,
+				5A483F8722CE0DC8007EEED2 /* Instrument Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5ACDBFB022CD6FB70098ACA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB947522CCAC8800FAA015 /* Model.swift */,
+				5A26912D22E2E96B00ACECFC /* Preferences.swift */,
+				5AEA3A0622F7C53E00B769C2 /* HealthData.swift */,
+				5A2DA8F522D40D8D006AE654 /* Data.swift */,
+				5A2DA8EF22D40C40006AE654 /* Format.swift */,
+				5A2DA8F122D40C55006AE654 /* Configuration.swift */,
+				5A2DA8F322D40D5A006AE654 /* Status.swift */,
+				5A44CD4322D68F6E00797C74 /* ResistivityCalculator.swift */,
+				5A2DA8FB22D411E6006AE654 /* Units.swift */,
+				5A5CCD5C22D6A80400CAAC4B /* Work */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5ADFF6A422E900D500694220 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ADFF6A222E900D100694220 /* BoxAndWhiskersView.swift */,
+				5AEA3A0422F7BEFE00B769C2 /* ScatterPlotView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A2C537022CAAF50009E2CDE /* Resistivity Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A2C539722CAAF52009E2CDE /* Build configuration list for PBXNativeTarget "Resistivity Utility" */;
+			buildPhases = (
+				5A2C536D22CAAF50009E2CDE /* Sources */,
+				5A2C536E22CAAF50009E2CDE /* Frameworks */,
+				5A2C536F22CAAF50009E2CDE /* Resources */,
+				5A2C53A322CAAF9F009E2CDE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Resistivity Utility";
+			productName = "Resistivity Measurer";
+			productReference = 5A2C537122CAAF50009E2CDE /* Resistivity Utility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A4C812422CD729300ED7445 /* Resistivity UtilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4C812C22CD729300ED7445 /* Build configuration list for PBXNativeTarget "Resistivity UtilityTests" */;
+			buildPhases = (
+				5A4C812122CD729300ED7445 /* Sources */,
+				5A4C812222CD729300ED7445 /* Frameworks */,
+				5A4C812322CD729300ED7445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A4C812B22CD729300ED7445 /* PBXTargetDependency */,
+			);
+			name = "Resistivity UtilityTests";
+			productName = "Resistivity UtilityTests";
+			productReference = 5A4C812522CD729300ED7445 /* Resistivity UtilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A2C536922CAAF50009E2CDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Connor Barnes";
+				TargetAttributes = {
+					5A2C537022CAAF50009E2CDE = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					5A4C812422CD729300ED7445 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 5A2C537022CAAF50009E2CDE;
+					};
+				};
+			};
+			buildConfigurationList = 5A2C536C22CAAF50009E2CDE /* Build configuration list for PBXProject "Resistivity Utility" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A2C536822CAAF50009E2CDE;
+			productRefGroup = 5A2C537222CAAF50009E2CDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A2C537022CAAF50009E2CDE /* Resistivity Utility */,
+				5A4C812422CD729300ED7445 /* Resistivity UtilityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A2C536F22CAAF50009E2CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2C537922CAAF52009E2CDE /* Assets.xcassets in Resources */,
+				5A2C537C22CAAF52009E2CDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4C812322CD729300ED7445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A2C536D22CAAF50009E2CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2DA8F022D40C40006AE654 /* Format.swift in Sources */,
+				5A44CD4422D68F6E00797C74 /* ResistivityCalculator.swift in Sources */,
+				5AEA3A0722F7C53E00B769C2 /* HealthData.swift in Sources */,
+				5A26912222E2D28B00ACECFC /* RawDataViewController FirstResponder.swift in Sources */,
+				5A8873B322FB80CB00813D57 /* StatisticsViewController+NSTableViewDelegate+NSTableViewDataSource.swift in Sources */,
+				5A26911E22E2CEB900ACECFC /* RawDataViewController.swift in Sources */,
+				5A26912022E2CF1A00ACECFC /* RawDataViewController+NSTableViewDelegate.swift in Sources */,
+				5A0BA19522D5608500990D27 /* DiscardDataWarningViewController.swift in Sources */,
+				5A2DA8FA22D4117E006AE654 /* PrimaryViewController FirstResponder.swift in Sources */,
+				5A44CD4222D68CC200797C74 /* Exporting.swift in Sources */,
+				5A483F8422CE0B7B007EEED2 /* Notifications.swift in Sources */,
+				5A02ECFD22F8D1D8006DE1DB /* ChangeCalibrationStandardViewController.swift in Sources */,
+				5A8873B622FB821200813D57 /* StatisticsViewController Model Updates.swift in Sources */,
+				5A2DA8EE22D3EE78006AE654 /* ResistivityConfigurationViewController.swift in Sources */,
+				5A483F7E22CDF6BD007EEED2 /* OhmMeterController.swift in Sources */,
+				5A26912722E2D63B00ACECFC /* MeasurementViewController.swift in Sources */,
+				5A4C813322CD768000ED7445 /* DefaultOhmMeterController.swift in Sources */,
+				5A7D493022FA0C5800CA7013 /* HealthWindowController.swift in Sources */,
+				5A2DA8F422D40D5A006AE654 /* Status.swift in Sources */,
+				5A483F8922CE108A007EEED2 /* PrimaryViewController Model Updates.swift in Sources */,
+				5ACB947622CCAC8800FAA015 /* Model.swift in Sources */,
+				5A2DA8FC22D411E6006AE654 /* Units.swift in Sources */,
+				5ACDBFAE22CD6F4E0098ACA4 /* Measurement.swift in Sources */,
+				5A2DA8F222D40C55006AE654 /* Configuration.swift in Sources */,
+				5A25427722E660780037188C /* GeneralPreferencesViewController.swift in Sources */,
+				5A26912B22E2D74F00ACECFC /* MeasurementViewController Model Updates.swift in Sources */,
+				5A02ED0122F8DB06006DE1DB /* HealthViewController Model Updates.swift in Sources */,
+				5A2C537722CAAF50009E2CDE /* PrimaryViewController.swift in Sources */,
+				5ADFF6A322E900D100694220 /* BoxAndWhiskersView.swift in Sources */,
+				5A8873B122FB7FFD00813D57 /* StatisticsViewController.swift in Sources */,
+				5A02ED0322F8E3A2006DE1DB /* HealthMeasurement.swift in Sources */,
+				5A483F7C22CDF68D007EEED2 /* Debug.swift in Sources */,
+				5A57B96F22EEAE3F00A8450A /* BoxAndWhiskersViewController.swift in Sources */,
+				5A02ECFF22F8D1E6006DE1DB /* ChangeCalibrationStandardConfirmationViewController.swift in Sources */,
+				5A02ECFB22F8D1C1006DE1DB /* HealthViewController.swift in Sources */,
+				5A483F8222CE0A07007EEED2 /* PrimaryWindowController.swift in Sources */,
+				5A2DA8F822D40F4C006AE654 /* MainMenu.swift in Sources */,
+				5A483F8022CDF6D5007EEED2 /* SimulatedOhmMeterController.swift in Sources */,
+				5A2DA8F622D40D8D006AE654 /* Data.swift in Sources */,
+				5A0BA19822D5673800990D27 /* DiscardDataWarningMeasureViewController.swift in Sources */,
+				5A26912922E2D6F800ACECFC /* MeasurementViewController+NSControlTextEditingDelegate.swift in Sources */,
+				5A2C537522CAAF50009E2CDE /* AppDelegate.swift in Sources */,
+				5AEA3A0522F7BEFE00B769C2 /* ScatterPlotView.swift in Sources */,
+				5ACDBFAA22CD6A430098ACA4 /* Style.swift in Sources */,
+				5A26912E22E2E96B00ACECFC /* Preferences.swift in Sources */,
+				5A26912422E2D2E600ACECFC /* RawDataViewController Model Updates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4C812122CD729300ED7445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4C813022CD72BE00ED7445 /* Instrument Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A4C812B22CD729300ED7445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A2C537022CAAF50009E2CDE /* Resistivity Utility */;
+			targetProxy = 5A4C812A22CD729300ED7445 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A2C537A22CAAF52009E2CDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A2C537B22CAAF52009E2CDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A2C539522CAAF52009E2CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A2C539622CAAF52009E2CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5A2C539822CAAF52009E2CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3ER597LK99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Resistivity Utility/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "connorbarnes.Resistivity-Measurer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A2C539922CAAF52009E2CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3ER597LK99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Resistivity Utility/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "connorbarnes.Resistivity-Measurer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5A4C812D22CD729300ED7445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3ER597LK99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Resistivity UtilityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "connorbarnes.Resistivity-UtilityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Resistivity Utility.app/Contents/MacOS/Resistivity Utility";
+			};
+			name = Debug;
+		};
+		5A4C812E22CD729300ED7445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3ER597LK99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Resistivity UtilityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "connorbarnes.Resistivity-UtilityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Resistivity Utility.app/Contents/MacOS/Resistivity Utility";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A2C536C22CAAF50009E2CDE /* Build configuration list for PBXProject "Resistivity Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2C539522CAAF52009E2CDE /* Debug */,
+				5A2C539622CAAF52009E2CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A2C539722CAAF52009E2CDE /* Build configuration list for PBXNativeTarget "Resistivity Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2C539822CAAF52009E2CDE /* Debug */,
+				5A2C539922CAAF52009E2CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4C812C22CD729300ED7445 /* Build configuration list for PBXNativeTarget "Resistivity UtilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4C812D22CD729300ED7445 /* Debug */,
+				5A4C812E22CD729300ED7445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A2C536922CAAF50009E2CDE /* Project object */;
+}

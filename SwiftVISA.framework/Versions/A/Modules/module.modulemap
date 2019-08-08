@@ -1,0 +1,11 @@
+framework module SwiftVISA {
+  umbrella header "SwiftVISA.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftVISA.Swift {
+    header "SwiftVISA-Swift.h"
+    requires objc
+}
