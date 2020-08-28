@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -623,7 +624,7 @@ CA
             <objects>
                 <viewController id="uz0-Go-RFD" customClass="ChangeCalibrationStandardViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="wFk-GI-U8D">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="103"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-vi-KZt">
@@ -650,7 +651,7 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="91C-ZX-z8b">
-                                <rect key="frame" x="18" y="64" width="229" height="17"/>
+                                <rect key="frame" x="18" y="64" width="229" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Calibration Standard Expected Value:" id="KTM-Sl-3gL">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -658,7 +659,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aIV-G2-k4f">
-                                <rect key="frame" x="249" y="61" width="118" height="22"/>
+                                <rect key="frame" x="249" y="61" width="118" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="SDY-kW-x8L">
                                     <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="10" id="YJ1-aj-nJY"/>
                                     <font key="font" metaFont="system"/>
@@ -670,10 +671,10 @@ Gw
                                 </connections>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-He-OjK">
-                                <rect key="frame" x="373" y="59" width="60" height="25"/>
+                                <rect key="frame" x="373" y="58" width="60" height="25"/>
                                 <popUpButtonCell key="cell" type="push" title="mΩ" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="Lbu-6P-1dz" id="gyD-gv-Fup">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
+                                    <font key="font" metaFont="system"/>
                                     <menu key="menu" id="T8v-yR-1CK">
                                         <items>
                                             <menuItem title="nΩ" id="9WL-de-Aav"/>
@@ -727,7 +728,7 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DAW-J0-Ucj">
-                                <rect key="frame" x="6" y="259" width="229" height="17"/>
+                                <rect key="frame" x="6" y="260" width="229" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Calibration Standard Expected Value:" id="THF-fl-ecZ">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -742,7 +743,7 @@ Gw
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="uac-WC-z73"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dvp-I1-OQr">
-                                        <rect key="frame" x="30" y="12" width="76" height="16"/>
+                                        <rect key="frame" x="30" y="12" width="76" height="15"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Not checked" id="iiv-QA-I7J">
                                             <font key="font" metaFont="cellTitle"/>
                                             <color key="textColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
@@ -772,7 +773,7 @@ Gw
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HXW-ex-l8P">
-                                <rect key="frame" x="6" y="234" width="229" height="17"/>
+                                <rect key="frame" x="6" y="236" width="229" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Actual Value:" id="75o-Rp-vb0">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -780,7 +781,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mYb-83-axo">
-                                <rect key="frame" x="239" y="234" width="179" height="17"/>
+                                <rect key="frame" x="239" y="236" width="179" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="1.05 μΩ" id="fln-K7-gBD">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -788,7 +789,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-pO-16Y">
-                                <rect key="frame" x="6" y="209" width="229" height="17"/>
+                                <rect key="frame" x="6" y="212" width="229" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Deviation:" id="vye-KZ-oDd">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -796,7 +797,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6PW-WG-wIW">
-                                <rect key="frame" x="239" y="209" width="179" height="17"/>
+                                <rect key="frame" x="239" y="212" width="179" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="0.05 μΩ (5%)" id="93e-x0-GIu">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -804,10 +805,10 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="lIV-F0-uXe" customClass="ScatterPlotView" customModule="Resistivity_Utility" customModuleProvider="target">
-                                <rect key="frame" x="8" y="64" width="408" height="100"/>
+                                <rect key="frame" x="8" y="63" width="408" height="105"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-nT-ihe">
-                                        <rect key="frame" x="128" y="38" width="152" height="24"/>
+                                        <rect key="frame" x="128" y="41" width="152" height="23"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="No historical data" id="1FS-iX-Jhx">
                                             <font key="font" metaFont="systemLight" size="20"/>
                                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -822,7 +823,7 @@ Gw
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BSF-yz-zoM">
-                                <rect key="frame" x="239" y="259" width="179" height="17"/>
+                                <rect key="frame" x="239" y="260" width="179" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="1.00 μΩ" id="xlh-Cy-uZL">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -830,7 +831,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0A9-ST-vMc">
-                                <rect key="frame" x="358" y="249" width="64" height="32"/>
+                                <rect key="frame" x="358" y="250" width="64" height="32"/>
                                 <buttonCell key="cell" type="push" title="Edit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UVj-d2-edt">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -840,10 +841,10 @@ Gw
                                 </connections>
                             </button>
                             <progressIndicator wantsLayer="YES" maxValue="100" displayedWhenStopped="NO" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-h7-B37">
-                                <rect key="frame" x="8" y="182" width="408" height="20"/>
+                                <rect key="frame" x="8" y="185" width="408" height="20"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1j0-oc-PiO">
-                                <rect key="frame" x="6" y="45" width="26" height="17"/>
+                                <rect key="frame" x="6" y="45" width="26" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="0 Ω" id="KXS-xd-2eF">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -851,7 +852,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-x6-oHa">
-                                <rect key="frame" x="6" y="166" width="26" height="17"/>
+                                <rect key="frame" x="6" y="170" width="26" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="0 Ω" id="qHg-PC-kmF">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -920,23 +921,23 @@ Gw
             <objects>
                 <viewController identifier="ChangeCalibrationStandardConfirmationViewController" storyboardIdentifier="ChangeCalibrationStandardConfirmationViewController" id="GgJ-cE-nda" customClass="ChangeCalibrationStandardConfirmationViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="4hf-Vr-B4n">
-                        <rect key="frame" x="0.0" y="0.0" width="424" height="176"/>
+                        <rect key="frame" x="0.0" y="0.0" width="424" height="175"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="xhH-dl-kMs">
-                                <rect key="frame" x="104" y="61" width="300" height="95"/>
+                                <rect key="frame" x="104" y="61" width="300" height="94"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wyk-HD-67j">
                                         <rect key="frame" x="-2" y="0.0" width="304" height="70"/>
                                         <textFieldCell key="cell" id="HHe-sQ-34q">
-                                            <font key="font" size="11" name=".AppleSystemUIFont"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <string key="title">Changing the calibration standard will delete all past health data. Choose "Change" to delete the old data and change the calibration standard or "Cancel" to continue use the old calibration value and keep all past health data.</string>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-qy-RUJ">
-                                        <rect key="frame" x="-2" y="78" width="304" height="17"/>
+                                        <rect key="frame" x="-2" y="78" width="304" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Change calibration standard?" id="40U-nu-NSG">
                                             <font key="font" metaFont="systemSemibold" size="13"/>
                                             <color key="textColor" name="selectedTextColor" catalog="System" colorSpace="catalog"/>
@@ -956,7 +957,7 @@ Gw
                                 </constraints>
                             </customView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ya2-cJ-x5U">
-                                <rect key="frame" x="20" y="92" width="64" height="64"/>
+                                <rect key="frame" x="20" y="91" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="2IY-kv-V31"/>
                                     <constraint firstAttribute="width" constant="64" id="7Vy-Sh-eWt"/>
@@ -1013,23 +1014,23 @@ Gw
             <objects>
                 <viewController identifier="DiscardDataMeasureWarningSheetViewController" storyboardIdentifier="DiscardDataMeasureWarningSheetViewController" id="6QP-ps-gJ2" customClass="DiscardDataMeasureWarningViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="eyS-DH-oxf">
-                        <rect key="frame" x="0.0" y="0.0" width="424" height="148"/>
+                        <rect key="frame" x="0.0" y="0.0" width="424" height="147"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="dbC-S3-tqU">
-                                <rect key="frame" x="104" y="61" width="300" height="67"/>
+                                <rect key="frame" x="104" y="61" width="300" height="66"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xpw-EQ-zVq">
                                         <rect key="frame" x="-2" y="0.0" width="304" height="42"/>
                                         <textFieldCell key="cell" id="n1k-KW-II9">
-                                            <font key="font" size="11" name=".AppleSystemUIFont"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <string key="title">There is data that has not been exported yet. Choose "Discard" to discard the old data and perform a new measurement or "Export" to export the data.</string>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-wU-hKx">
-                                        <rect key="frame" x="-2" y="50" width="304" height="17"/>
+                                        <rect key="frame" x="-2" y="50" width="304" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Discard Data?" id="SLP-AH-MV4">
                                             <font key="font" metaFont="systemSemibold" size="13"/>
                                             <color key="textColor" name="selectedTextColor" catalog="System" colorSpace="catalog"/>
@@ -1049,7 +1050,7 @@ Gw
                                 </constraints>
                             </customView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dyz-Qj-7ns">
-                                <rect key="frame" x="20" y="64" width="64" height="64"/>
+                                <rect key="frame" x="20" y="63" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="11M-zC-s2r"/>
                                     <constraint firstAttribute="height" constant="64" id="cxs-cy-meJ"/>
@@ -1119,22 +1120,22 @@ Gw
             <objects>
                 <viewController identifier="DiscardDataWarningSheetViewController" storyboardIdentifier="DiscardDataWarningSheetViewController" id="Eh6-7X-eQ4" customClass="DiscardDataWarningViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="wA0-7o-hOX">
-                        <rect key="frame" x="0.0" y="0.0" width="424" height="148"/>
+                        <rect key="frame" x="0.0" y="0.0" width="424" height="147"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="xaN-on-pWK">
-                                <rect key="frame" x="104" y="61" width="300" height="67"/>
+                                <rect key="frame" x="104" y="61" width="300" height="66"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IHl-Zy-Sm5">
                                         <rect key="frame" x="-2" y="0.0" width="304" height="42"/>
                                         <textFieldCell key="cell" title="There is data that has not been exported yet. Choose &quot;Discard&quot; to discard the old data or &quot;Export&quot; to export the data." id="BF8-MG-Kw4">
-                                            <font key="font" size="11" name=".AppleSystemUIFont"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nwF-Fm-Tbo">
-                                        <rect key="frame" x="-2" y="50" width="304" height="17"/>
+                                        <rect key="frame" x="-2" y="50" width="304" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Discard Data?" id="AmG-5M-CXx">
                                             <font key="font" metaFont="systemSemibold" size="13"/>
                                             <color key="textColor" name="selectedTextColor" catalog="System" colorSpace="catalog"/>
@@ -1154,7 +1155,7 @@ Gw
                                 </constraints>
                             </customView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CxH-jG-rlH">
-                                <rect key="frame" x="20" y="64" width="64" height="64"/>
+                                <rect key="frame" x="20" y="63" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="2C6-uL-qH2"/>
                                     <constraint firstAttribute="width" constant="64" id="hqF-rk-Zj5"/>
@@ -1323,7 +1324,7 @@ Gw
                     <tabView key="tabView" wantsLayer="YES" type="noTabsNoBorder" id="3LU-gp-rCf">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
+                        <font key="font" metaFont="system"/>
                         <connections>
                             <outlet property="delegate" destination="3jY-xd-kZh" id="1uk-9h-UCs"/>
                         </connections>
@@ -1342,14 +1343,14 @@ Gw
             <objects>
                 <viewController id="FiR-gZ-JAq" customClass="GeneralPreferencesViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="I0Z-We-cPa">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="62"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="61"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="f8p-Ux-1L9">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="62"/>
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="61"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-tW-kkL">
-                                        <rect key="frame" x="18" y="23" width="90" height="17"/>
+                                        <rect key="frame" x="18" y="23" width="90" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="VISA Address:" id="tpi-Kb-AZX">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1357,7 +1358,7 @@ Gw
                                         </textFieldCell>
                                     </textField>
                                     <textField toolTip="The VISA address of the ohmmeter" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7qm-PG-UBz">
-                                        <rect key="frame" x="114" y="20" width="303" height="22"/>
+                                        <rect key="frame" x="114" y="20" width="303" height="21"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="USB0::0x0403::0x6001::PX3I4TV9::RAW" drawsBackground="YES" id="5en-tI-J20">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1375,7 +1376,7 @@ Gw
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusAvailable" id="hDV-mr-F8U"/>
                                     </imageView>
                                     <button toolTip="Tests the connection to the specified VISA address" translatesAutoresizingMaskIntoConstraints="NO" id="Ry2-mV-5oL">
-                                        <rect key="frame" x="425" y="24" width="11" height="15"/>
+                                        <rect key="frame" x="425" y="23" width="11" height="15"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRefreshTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AE0-xC-c9z">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -1675,7 +1676,7 @@ Gw
             <objects>
                 <viewController id="5Bs-75-qkn" customClass="ResistivityConfigurationViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="uGU-SP-m5U">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="152"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="148"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aP5-Km-WhC">
@@ -1705,18 +1706,18 @@ Gw
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ao3-2L-x2Y">
-                                <rect key="frame" x="6" y="127" width="438" height="17"/>
+                                <rect key="frame" x="6" y="124" width="438" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eDE-Wh-t5K"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Configure Resistivity" id="vDp-xe-R7j">
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OZh-vS-MfV">
-                                <rect key="frame" x="195" y="97" width="247" height="22"/>
+                                <rect key="frame" x="195" y="95" width="247" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="SHe-cZ-MmA">
                                     <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="10" id="ni7-Qy-Umm"/>
                                     <font key="font" metaFont="system"/>
@@ -1725,7 +1726,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W80-CN-ML7">
-                                <rect key="frame" x="84" y="100" width="105" height="17"/>
+                                <rect key="frame" x="84" y="98" width="105" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Thickness (mm):" id="Vhs-G5-xEt">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1733,7 +1734,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-km-pAp">
-                                <rect key="frame" x="14" y="70" width="175" height="17"/>
+                                <rect key="frame" x="14" y="69" width="175" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Thickness correction factor:" id="CFH-NF-zLY">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1741,7 +1742,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e7m-i1-DBo">
-                                <rect key="frame" x="6" y="40" width="183" height="17"/>
+                                <rect key="frame" x="6" y="40" width="183" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Finite width correction factor:" id="bCJ-aq-5Ct">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1759,7 +1760,7 @@ Gw
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-tQ-cHT">
-                                <rect key="frame" x="195" y="67" width="247" height="22"/>
+                                <rect key="frame" x="195" y="66" width="247" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="TZG-3Z-VDS">
                                     <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="10" id="8fO-T0-cf9"/>
                                     <font key="font" metaFont="system"/>
@@ -1768,7 +1769,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tDp-BM-Vqf">
-                                <rect key="frame" x="195" y="37" width="247" height="22"/>
+                                <rect key="frame" x="195" y="37" width="247" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Qji-HJ-LtU">
                                     <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="10" id="WQs-93-exh"/>
                                     <font key="font" metaFont="system"/>
@@ -1820,29 +1821,28 @@ Gw
         <scene sceneID="lrE-8Y-gHa">
             <objects>
                 <viewController id="n6N-Ro-0Ci" customClass="RawDataViewController" customModule="Resistivity_Utility" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="2DH-Mk-RgG">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                    <view key="view" wantsLayer="YES" misplaced="YES" id="2DH-Mk-RgG">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="275"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="lP0-QU-iPj">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="249"/>
                                 <subviews>
                                     <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZV-2c-EHw">
-                                        <rect key="frame" x="1" y="0.0" width="449" height="300"/>
+                                        <rect key="frame" x="1" y="0.0" width="449" height="249"/>
                                         <clipView key="contentView" drawsBackground="NO" id="ADa-Y7-WHF">
-                                            <rect key="frame" x="0.0" y="0.0" width="449" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="449" height="249"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="ZhH-Fv-dfF" viewBased="YES" id="5Ej-vV-dwO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="449" height="275"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="449" height="224"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
                                                         <tableColumn identifier="MeasurementNumberColumn" width="40" minWidth="10" maxWidth="3.4028234663852886e+38" headerToolTip="The measurement number for the datapoint" id="Z9i-lw-vIC">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="#">
-                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </tableHeaderCell>
@@ -1853,12 +1853,12 @@ Gw
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
-                                                                <tableCellView identifier="MeasurementNumberCell" id="9vh-E2-vmI">
+                                                                <tableCellView identifier="MeasurementNumberCell" misplaced="YES" id="9vh-E2-vmI">
                                                                     <rect key="frame" x="1" y="1" width="40" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ihI-dI-7uV">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="1" id="2ib-q0-XLS">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1880,7 +1880,6 @@ Gw
                                                         </tableColumn>
                                                         <tableColumn identifier="LocationColumn" width="160" minWidth="10" maxWidth="3.4028234663852886e+38" headerToolTip="The location (if sepecified) for the datapoint" id="YQp-Ew-aVj">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Location">
-                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </tableHeaderCell>
@@ -1891,12 +1890,12 @@ Gw
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
-                                                                <tableCellView identifier="LocationCell" id="prO-SU-aNP">
+                                                                <tableCellView identifier="LocationCell" misplaced="YES" id="prO-SU-aNP">
                                                                     <rect key="frame" x="44" y="1" width="160" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-7g-R2f">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Somewhere" id="Cq5-4z-Fwu">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1918,7 +1917,6 @@ Gw
                                                         </tableColumn>
                                                         <tableColumn identifier="TimeColumn" width="100" minWidth="40" maxWidth="1000" headerToolTip="The time the datapoint was measured (relative to the first)" id="rVi-hw-i6B">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Time">
-                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -1929,12 +1927,12 @@ Gw
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
-                                                                <tableCellView identifier="TimeCell" id="agC-iB-RtQ">
+                                                                <tableCellView identifier="TimeCell" misplaced="YES" id="agC-iB-RtQ">
                                                                     <rect key="frame" x="207" y="1" width="100" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="lfL-bP-Cxc">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" sendsActionOnEndEditing="YES" title="0 s" id="Swl-lc-2TB">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1956,7 +1954,6 @@ Gw
                                                         </tableColumn>
                                                         <tableColumn identifier="ResistanceColumn" width="100" minWidth="40" maxWidth="1000" headerToolTip="The resistance of the datapoint" id="Q1U-9Y-5aB">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Resistance">
-                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -1967,12 +1964,12 @@ Gw
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
-                                                                <tableCellView identifier="ResistanceCell" id="LLQ-o9-y0P">
+                                                                <tableCellView identifier="ResistanceCell" misplaced="YES" id="LLQ-o9-y0P">
                                                                     <rect key="frame" x="310" y="1" width="100" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="YW8-cq-rqm">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" sendsActionOnEndEditing="YES" title="0 Ω" id="6ks-Hs-tQG">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1994,7 +1991,6 @@ Gw
                                                         </tableColumn>
                                                         <tableColumn identifier="ResistivityColumn" width="34" minWidth="10" maxWidth="3.4028234663852886e+38" headerToolTip="The resistivity of the datapoint (if it was calculated)" id="WM9-LN-z5q">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Resistivity">
-                                                                <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </tableHeaderCell>
@@ -2005,12 +2001,12 @@ Gw
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
-                                                                <tableCellView identifier="ResistivityCell" id="peC-gi-5te">
+                                                                <tableCellView identifier="ResistivityCell" misplaced="YES" id="peC-gi-5te">
                                                                     <rect key="frame" x="413" y="1" width="34" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="vjf-QL-z3K">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="16"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" sendsActionOnEndEditing="YES" title="0 Ω⋅m" id="lrG-mA-XrX">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -2234,7 +2230,7 @@ Gw
                                 <rect key="frame" x="0.0" y="0.0" width="367" height="396"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="QaF-TB-0av">
-                                        <rect key="frame" x="6" y="342" width="165" height="17"/>
+                                        <rect key="frame" x="6" y="343" width="165" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Number of measurements:" id="s2J-9d-JTf">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2242,7 +2238,7 @@ Gw
                                         </textFieldCell>
                                     </textField>
                                     <textField identifier="MeasurementCountTextField" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zTj-hk-pzR">
-                                        <rect key="frame" x="177" y="339" width="182" height="22"/>
+                                        <rect key="frame" x="177" y="340" width="182" height="21"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="10" drawsBackground="YES" id="eJA-0y-BWG">
                                             <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" lenient="YES" roundingMode="floor" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="4ds-HO-JYe">
                                                 <integer key="multiplier" value="1"/>
@@ -2261,7 +2257,7 @@ Gw
                                         <rect key="frame" x="6" y="364" width="166" height="25"/>
                                         <popUpButtonCell key="cell" type="push" title="Delay" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="0W4-B2-cLN" id="sX8-UL-Bkp">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="menu"/>
+                                            <font key="font" metaFont="system"/>
                                             <menu key="menu" id="J2d-rl-eiv">
                                                 <items>
                                                     <menuItem title="Delay" state="on" toolTip="Wait the given number of seconds after each measurement" id="0W4-B2-cLN"/>
@@ -2274,7 +2270,7 @@ Gw
                                         </connections>
                                     </popUpButton>
                                     <textField identifier="DelayTextField" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-1s-lfR">
-                                        <rect key="frame" x="177" y="366" width="119" height="22"/>
+                                        <rect key="frame" x="177" y="367" width="119" height="21"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="0" drawsBackground="YES" id="5Pk-yZ-DkY">
                                             <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" usesGroupingSeparator="NO" lenient="YES" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="8" id="dqZ-EN-4cX">
                                                 <real key="minimum" value="0.0"/>
@@ -2291,7 +2287,7 @@ Gw
                                         <rect key="frame" x="302" y="364" width="60" height="25"/>
                                         <popUpButtonCell key="cell" type="push" title="s" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="NnX-vo-eWB" id="f4O-b3-2wF">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="menu"/>
+                                            <font key="font" metaFont="system"/>
                                             <menu key="menu" id="1K9-go-aGt">
                                                 <items>
                                                     <menuItem title="μs" toolTip="Microseconds" id="gbJ-nf-FJE"/>
@@ -2307,15 +2303,15 @@ Gw
                                         </connections>
                                     </popUpButton>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j5r-hR-Nbd">
-                                        <rect key="frame" x="6" y="276" width="125" height="17"/>
+                                        <rect key="frame" x="6" y="278" width="125" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Summary Statistics:" id="xA4-U4-lzv">
-                                            <font key="font" metaFont="titleBar"/>
+                                            <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <gridView horizontalCompressionResistancePriority="751" xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="8" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="5Ys-xU-ixc">
-                                        <rect key="frame" x="8" y="151" width="160" height="92"/>
+                                        <rect key="frame" x="8" y="144" width="160" height="102"/>
                                         <rows>
                                             <gridRow id="2G6-KH-3Wb"/>
                                             <gridRow id="RJT-W5-RFp"/>
@@ -2328,10 +2324,10 @@ Gw
                                         <gridCells>
                                             <gridCell row="2G6-KH-3Wb" column="a5C-ac-Ls8" id="Gec-nz-F22">
                                                 <customView key="contentView" toolTip="Mean resistance" translatesAutoresizingMaskIntoConstraints="NO" id="lFk-fx-Pxa">
-                                                    <rect key="frame" x="0.0" y="75" width="100" height="17"/>
+                                                    <rect key="frame" x="0.0" y="72" width="100" height="30"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-oa-zyx">
-                                                            <rect key="frame" x="-2" y="0.0" width="28" height="17"/>
+                                                            <rect key="frame" x="-2" y="0.0" width="28" height="30"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="μ = " id="U3Z-pE-gnZ">
                                                                 <font key="font" usesAppearanceFont="YES"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2339,7 +2335,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w8t-Ld-aVm">
-                                                            <rect key="frame" x="22" y="0.0" width="80" height="17"/>
+                                                            <rect key="frame" x="22" y="14" width="80" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="k80-7p-URh">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2359,10 +2355,10 @@ Gw
                                             </gridCell>
                                             <gridCell row="RJT-W5-RFp" column="a5C-ac-Ls8" id="8u0-eF-lof">
                                                 <customView key="contentView" toolTip="Standard deviation of resistance" translatesAutoresizingMaskIntoConstraints="NO" id="Wyw-0K-6zd">
-                                                    <rect key="frame" x="0.0" y="50" width="100" height="17"/>
+                                                    <rect key="frame" x="0.0" y="48" width="100" height="16"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cTV-Rf-wok">
-                                                            <rect key="frame" x="-2" y="0.0" width="28" height="17"/>
+                                                            <rect key="frame" x="-2" y="0.0" width="28" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="σ = " id="0td-Oc-lAF">
                                                                 <font key="font" usesAppearanceFont="YES"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2370,7 +2366,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CYs-qW-4mn">
-                                                            <rect key="frame" x="22" y="0.0" width="80" height="17"/>
+                                                            <rect key="frame" x="22" y="0.0" width="80" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="IZG-Yo-47c">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2390,10 +2386,10 @@ Gw
                                             </gridCell>
                                             <gridCell row="8BW-fB-gyJ" column="a5C-ac-Ls8" id="Icc-ls-US6">
                                                 <customView key="contentView" toolTip="Minimum resistance" translatesAutoresizingMaskIntoConstraints="NO" id="8LQ-93-ttq">
-                                                    <rect key="frame" x="0.0" y="25" width="100" height="17"/>
+                                                    <rect key="frame" x="0.0" y="24" width="100" height="16"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-rI-EsJ">
-                                                            <rect key="frame" x="-2" y="0.0" width="42" height="17"/>
+                                                            <rect key="frame" x="-2" y="0.0" width="42" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="min = " id="axD-QW-EyE">
                                                                 <font key="font" usesAppearanceFont="YES"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2401,7 +2397,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0c2-fX-f3N">
-                                                            <rect key="frame" x="36" y="0.0" width="66" height="17"/>
+                                                            <rect key="frame" x="36" y="0.0" width="66" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="HKd-fU-Xmz">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2421,10 +2417,10 @@ Gw
                                             </gridCell>
                                             <gridCell row="KGX-8O-2Ur" column="a5C-ac-Ls8" id="Kly-gq-fJo">
                                                 <customView key="contentView" toolTip="Maximum resistance" translatesAutoresizingMaskIntoConstraints="NO" id="OtK-mZ-HIU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dOG-mX-aef">
-                                                            <rect key="frame" x="-2" y="0.0" width="45" height="17"/>
+                                                            <rect key="frame" x="-2" y="0.0" width="45" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="max = " id="SY7-Dd-oQk">
                                                                 <font key="font" usesAppearanceFont="YES"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2432,7 +2428,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-CO-ihU">
-                                                            <rect key="frame" x="39" y="0.0" width="63" height="17"/>
+                                                            <rect key="frame" x="39" y="0.0" width="63" height="16"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="cXK-qx-pDD">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2453,10 +2449,10 @@ Gw
                                         </gridCells>
                                     </gridView>
                                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Gt4-fE-gHn">
-                                        <rect key="frame" x="0.0" y="299" width="367" height="5"/>
+                                        <rect key="frame" x="0.0" y="300" width="367" height="5"/>
                                     </box>
                                     <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="xYu-YK-ZXC">
-                                        <rect key="frame" x="8" y="70" width="351" height="50"/>
+                                        <rect key="frame" x="8" y="69" width="351" height="48"/>
                                         <rows>
                                             <gridRow rowAlignment="firstBaseline" id="VVm-2e-jlk"/>
                                             <gridRow rowAlignment="firstBaseline" id="My7-0Y-R1U"/>
@@ -2468,7 +2464,7 @@ Gw
                                         <gridCells>
                                             <gridCell row="VVm-2e-jlk" column="ma3-Iy-L6c" id="YtY-Ko-IvA">
                                                 <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="imT-Xi-NRW">
-                                                    <rect key="frame" x="-2" y="31" width="44" height="17"/>
+                                                    <rect key="frame" x="-2" y="30" width="44" height="16"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Name:" id="IcW-fy-4s4">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2478,7 +2474,7 @@ Gw
                                             </gridCell>
                                             <gridCell row="VVm-2e-jlk" column="voH-1D-itP" id="uzI-W2-866">
                                                 <textField key="contentView" identifier="NameTextField" toolTip="The name of current group of measurements" horizontalHuggingPriority="249" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="L7g-QI-PsQ">
-                                                    <rect key="frame" x="251" y="28" width="100" height="22"/>
+                                                    <rect key="frame" x="62" y="27" width="289" height="21"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Name" drawsBackground="YES" id="Fr9-eY-z3s">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -2491,7 +2487,7 @@ Gw
                                             </gridCell>
                                             <gridCell row="My7-0Y-R1U" column="ma3-Iy-L6c" id="b6A-qd-mw9">
                                                 <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gxp-im-yFj">
-                                                    <rect key="frame" x="-2" y="3" width="60" height="17"/>
+                                                    <rect key="frame" x="-2" y="3" width="60" height="16"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Location:" id="06s-FI-wUP">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2501,7 +2497,7 @@ Gw
                                             </gridCell>
                                             <gridCell row="My7-0Y-R1U" column="voH-1D-itP" id="NGr-UQ-qPN">
                                                 <textField key="contentView" identifier="LocationTextField" toolTip="The location of the next measurement" horizontalHuggingPriority="249" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-Yq-Gnz">
-                                                    <rect key="frame" x="251" y="0.0" width="100" height="22"/>
+                                                    <rect key="frame" x="62" y="0.0" width="289" height="21"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Location" drawsBackground="YES" id="ATy-uA-jcR">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -2515,7 +2511,7 @@ Gw
                                         </gridCells>
                                     </gridView>
                                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="92Y-na-JAw">
-                                        <rect key="frame" x="0.0" y="126" width="367" height="5"/>
+                                        <rect key="frame" x="0.0" y="123" width="367" height="5"/>
                                     </box>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-Lm-0op">
                                         <rect key="frame" x="0.0" y="0.0" width="367" height="37"/>
@@ -2551,7 +2547,7 @@ Gw
                                         </constraints>
                                     </customView>
                                     <button toolTip="Calculate the resistivity for the next set of measurements" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bTR-aH-cYb">
-                                        <rect key="frame" x="6" y="312" width="144" height="18"/>
+                                        <rect key="frame" x="6" y="313" width="144" height="18"/>
                                         <buttonCell key="cell" type="check" title="Calculate Resistivity" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ol8-7m-ID0">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -2561,7 +2557,7 @@ Gw
                                         </connections>
                                     </button>
                                     <button toolTip="Configure how the resistivity is calculated" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ndc-n0-Bx5">
-                                        <rect key="frame" x="150" y="303" width="100" height="32"/>
+                                        <rect key="frame" x="150" y="304" width="100" height="32"/>
                                         <buttonCell key="cell" type="push" title="Configure" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7oR-C8-Ehw">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -2571,7 +2567,7 @@ Gw
                                         </connections>
                                     </button>
                                     <customView horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="kdJ-Zy-5OK">
-                                        <rect key="frame" x="170" y="99" width="189" height="169"/>
+                                        <rect key="frame" x="170" y="102" width="189" height="168"/>
                                         <subviews>
                                             <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="8" columnSpacing="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="lr3-cV-LHY">
                                                 <rect key="frame" x="9" y="0.0" width="180" height="144"/>
@@ -2601,7 +2597,7 @@ Gw
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vfg-Pd-ee9">
-                                                                    <rect key="frame" x="22" y="13" width="80" height="17"/>
+                                                                    <rect key="frame" x="22" y="14" width="80" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="tpX-7Q-rcC">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2632,7 +2628,7 @@ Gw
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hi1-vQ-Sfl">
-                                                                    <rect key="frame" x="22" y="13" width="80" height="17"/>
+                                                                    <rect key="frame" x="22" y="14" width="80" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="gPo-M4-mwQ">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2663,7 +2659,7 @@ Gw
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-Ju-u7l">
-                                                                    <rect key="frame" x="36" y="13" width="66" height="17"/>
+                                                                    <rect key="frame" x="36" y="14" width="66" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="fBX-92-taY">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2694,7 +2690,7 @@ Gw
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-AH-Dnm">
-                                                                    <rect key="frame" x="39" y="13" width="63" height="17"/>
+                                                                    <rect key="frame" x="39" y="14" width="63" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="N/A" id="CSw-1g-Bie">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2715,7 +2711,7 @@ Gw
                                                 </gridCells>
                                             </gridView>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-pf-yhs">
-                                                <rect key="frame" x="7" y="152" width="184" height="17"/>
+                                                <rect key="frame" x="7" y="152" width="184" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Resistivity:" id="3Hq-qE-Xgo">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2723,7 +2719,7 @@ Gw
                                                 </textFieldCell>
                                             </textField>
                                             <box horizontalHuggingPriority="751" horizontalCompressionResistancePriority="751" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="NaY-2d-nM1">
-                                                <rect key="frame" x="-2" y="0.0" width="5" height="169"/>
+                                                <rect key="frame" x="-2" y="0.0" width="5" height="168"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="4sQ-GE-ymd"/>
                                                 </constraints>
@@ -2743,7 +2739,7 @@ Gw
                                         </constraints>
                                     </customView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZEV-cl-Lc3">
-                                        <rect key="frame" x="6" y="251" width="164" height="17"/>
+                                        <rect key="frame" x="6" y="254" width="164" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Resistance:" id="AbQ-VZ-CL4">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2751,7 +2747,7 @@ Gw
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PqJ-HE-3Qw">
-                                        <rect key="frame" x="6" y="45" width="147" height="17"/>
+                                        <rect key="frame" x="6" y="45" width="147" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Measurement Number: " id="hrH-Wf-j9u">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2759,7 +2755,7 @@ Gw
                                         </textFieldCell>
                                     </textField>
                                     <textField toolTip="The running measurement number − each set of measurements has a unique measurement number" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oLa-3y-wXu">
-                                        <rect key="frame" x="149" y="45" width="212" height="17"/>
+                                        <rect key="frame" x="149" y="45" width="212" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="0" id="qm5-Y7-MCm">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2870,7 +2866,7 @@ Gw
                                             <rect key="frame" x="0.0" y="0.0" width="225" height="300"/>
                                             <subviews>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="XkC-WU-sKt" customClass="BoxAndWhiskersView" customModule="Resistivity_Utility" customModuleProvider="target">
-                                                    <rect key="frame" x="116" y="15" width="89" height="244"/>
+                                                    <rect key="frame" x="116" y="15" width="89" height="245"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isVertical" value="YES"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
@@ -2879,7 +2875,7 @@ Gw
                                                     </userDefinedRuntimeAttributes>
                                                 </customView>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DpD-VP-zYe">
-                                                    <rect key="frame" x="6" y="275" width="213" height="17"/>
+                                                    <rect key="frame" x="6" y="276" width="213" height="16"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Resistance" id="lNL-Ef-Hxk">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -2887,10 +2883,10 @@ Gw
                                                     </textFieldCell>
                                                 </textField>
                                                 <stackView distribution="equalSpacing" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvQ-ah-tBx">
-                                                    <rect key="frame" x="8" y="8" width="100" height="259"/>
+                                                    <rect key="frame" x="8" y="8" width="100" height="260"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PCQ-Wc-Y6W">
-                                                            <rect key="frame" x="-2" y="242" width="104" height="17"/>
+                                                            <rect key="frame" x="-2" y="243" width="104" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="cqx-rn-3JT"/>
                                                                 <constraint firstAttribute="height" constant="17" id="v9d-CP-qtY"/>
@@ -2914,7 +2910,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lbt-jh-xLc">
-                                                            <rect key="frame" x="-2" y="145" width="104" height="17"/>
+                                                            <rect key="frame" x="-2" y="146" width="104" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="1o0-bd-DeS"/>
                                                                 <constraint firstAttribute="width" constant="100" id="NZE-F1-mFe"/>
@@ -2938,7 +2934,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Iag-eX-i8x">
-                                                            <rect key="frame" x="-2" y="48" width="104" height="17"/>
+                                                            <rect key="frame" x="-2" y="49" width="104" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="B83-WV-od4"/>
                                                                 <constraint firstAttribute="height" constant="17" id="ktu-2g-OJ2"/>
@@ -2997,7 +2993,7 @@ Gw
                                             <rect key="frame" x="225" y="0.0" width="224" height="300"/>
                                             <subviews>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="7ih-gH-bSx" customClass="BoxAndWhiskersView" customModule="Resistivity_Utility" customModuleProvider="target">
-                                                    <rect key="frame" x="116" y="15" width="88" height="244"/>
+                                                    <rect key="frame" x="116" y="15" width="88" height="245"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isVertical" value="YES"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
@@ -3006,7 +3002,7 @@ Gw
                                                     </userDefinedRuntimeAttributes>
                                                 </customView>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jYL-cl-QEU">
-                                                    <rect key="frame" x="6" y="275" width="212" height="17"/>
+                                                    <rect key="frame" x="6" y="276" width="212" height="16"/>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Resistivity" id="ksx-kW-816">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -3014,10 +3010,10 @@ Gw
                                                     </textFieldCell>
                                                 </textField>
                                                 <stackView distribution="equalSpacing" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzf-0m-iTA">
-                                                    <rect key="frame" x="8" y="8" width="100" height="259"/>
+                                                    <rect key="frame" x="8" y="8" width="100" height="260"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DwA-S0-0ky">
-                                                            <rect key="frame" x="-2" y="242" width="104" height="17"/>
+                                                            <rect key="frame" x="-2" y="243" width="104" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="gxc-tB-KXj"/>
                                                                 <constraint firstAttribute="width" constant="100" id="jP7-k7-Q24"/>
@@ -3041,7 +3037,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uIk-LU-EVn">
-                                                            <rect key="frame" x="-2" y="145" width="104" height="17"/>
+                                                            <rect key="frame" x="-2" y="146" width="104" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="Yo4-v8-2QJ"/>
                                                                 <constraint firstAttribute="width" constant="100" id="aob-ov-C9L"/>
@@ -3065,7 +3061,7 @@ Gw
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yrJ-3B-Ynm">
-                                                            <rect key="frame" x="-2" y="48" width="104" height="17"/>
+                                                            <rect key="frame" x="-2" y="49" width="104" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="ud3-q6-4wc"/>
                                                                 <constraint firstAttribute="width" constant="100" id="v0J-EN-hhR"/>
@@ -3191,14 +3187,13 @@ Gw
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="aNP-Ku-JlD" viewBased="YES" id="4Uh-vS-CZa">
                                                         <rect key="frame" x="0.0" y="0.0" width="560" height="275"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                         <tableColumns>
                                                             <tableColumn identifier="sNumber" width="59" minWidth="40" maxWidth="1000" id="i7k-mW-Kub">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="#">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                 </tableHeaderCell>
@@ -3231,7 +3226,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sMeanR" width="59" minWidth="40" maxWidth="1000" id="ZMM-Vg-9ZG">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="μ (R)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                 </tableHeaderCell>
@@ -3264,7 +3258,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sSDR" width="59" minWidth="10" maxWidth="3.4028234663852886e+38" id="l2Y-mO-AjW">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="σ (R)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
@@ -3297,7 +3290,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sMinR" width="59" minWidth="10" maxWidth="3.4028234663852886e+38" id="Rk9-gD-aFC">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="min (R)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
@@ -3330,7 +3322,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sMaxR" width="59.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="R98-vp-wqg">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="max (R)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
@@ -3363,7 +3354,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sMeanRho" width="59.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="pCz-ea-b3t">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="μ (ρ)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
@@ -3375,7 +3365,7 @@ Gw
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <prototypeCellViews>
                                                                     <tableCellView identifier="sMeanRhoCell" id="C6e-Tq-Xbg">
-                                                                        <rect key="frame" x="311.5" y="1" width="59" height="17"/>
+                                                                        <rect key="frame" x="312" y="1" width="59" height="17"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLL-eT-K3x">
@@ -3396,7 +3386,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sSDRho" width="59.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="BIY-Gc-9PH">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="σ (ρ)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
@@ -3429,7 +3418,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sMinRho" width="59.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="Jwf-At-qgl">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="min (ρ)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
@@ -3441,7 +3429,7 @@ Gw
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <prototypeCellViews>
                                                                     <tableCellView identifier="sMinRhoCell" id="kBE-6B-Du1">
-                                                                        <rect key="frame" x="436.5" y="1" width="59" height="17"/>
+                                                                        <rect key="frame" x="437" y="1" width="59" height="17"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <subviews>
                                                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93a-Ez-lIU">
@@ -3462,7 +3450,6 @@ Gw
                                                             </tableColumn>
                                                             <tableColumn identifier="sMaxRho" width="59" minWidth="10" maxWidth="3.4028234663852886e+38" id="rdd-Ly-yma">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="max (ρ)">
-                                                                    <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </tableHeaderCell>
